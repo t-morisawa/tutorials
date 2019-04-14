@@ -145,3 +145,12 @@ True
 >>> c = q.choice_set.filter(choice_text__startswith='Just hacking')
 >>> c.delete()
 ```
+
+
+## フロントエンドのテストについてメモ
+
+TODO
+
+## テンプレートや静的ファイルのパスをカスタマイズするならどうするか
+
+TODO
