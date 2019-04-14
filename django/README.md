@@ -163,3 +163,10 @@ TEMPLATES = [
 ]
 ```
 
+詳しくはテンプレートローダの章を読むべし
+
+https://docs.djangoproject.com/en/2.2/topics/templates/#template-loading
+
+## どういうときにサーバの再起動が必要になるのかわからない
+
+TODO
