@@ -153,4 +153,13 @@ TODO
 
 ## テンプレートや静的ファイルのパスをカスタマイズするならどうするか
 
-TODO
+`settings.py` にパスを読ませる
+
+```
+TEMPLATES = [
+...
+'DIRS': [os.path.join(BASE_DIR, 'templates')],
+...
+]
+```
+
