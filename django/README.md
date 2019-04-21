@@ -169,4 +169,6 @@ https://docs.djangoproject.com/en/2.2/topics/templates/#template-loading
 
 ## どういうときにサーバの再起動が必要になるのかわからない
 
-TODO
+新しいCSSファイルを追加したとき？
+`runserver` はPythonファイルが更新されたのに気づいて再起動するので基本的には不要
+
