@@ -1,0 +1,17 @@
+<div>
+    {{form.data}}
+</div>
+
+<div>
+    {{form.fields}}
+</div>
+
+<div>
+    {{form.contacts}}
+</div>
+
+<form action="{{ request.path }}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
