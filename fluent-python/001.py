@@ -65,3 +65,17 @@ for city in metro_data:
     print(cc_name(city))
 
 print(itemgetter(1)(('a', 'b', 'c')))
+
+# attrgetter
+from collections import namedtuple
+LatLong = namedtuple('LatLong', 'lat long')
+Metropolis = namedtuple('Metropolis', 'name cc pop coord')  # カンマ区切り、スペース区切りなどできる
+metro_areas = [Metropolis(name, cc, pop, LatLong(lat, long))
+               for name, cc, pop, (lat, long) in metro_data]
+print(metro_areas[0])
+metro_areas[0].coord.lat
+from operator import attrgetter
+name_lat = attrgetter('name', 'coord.lat')
+
+for city in sorted(metro_areas, key=attrgetter('coord.lat')):
+    print(name_lat(city))
