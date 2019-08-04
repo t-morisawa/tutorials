@@ -21,3 +21,18 @@ targetはinnerへの参照が上書きされる
 """
 print(target)
 
+"""
+Pythonの変数スコープ
+
+関数内で代入が行われた変数はローカル変数だと見なされる。
+それを防ぐにはglobal宣言をする
+"""
+b = 6
+def f3(a):
+    global b
+    print(a)
+    print(b)
+    b = 9
+
+f3(3)
+print(b)
