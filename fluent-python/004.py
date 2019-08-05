@@ -26,7 +26,7 @@ class Vector:
         return str(tuple(self))
 
     def __bytes__(self):
-        return (bytes([ord(self.typecode)]) + bytes(self.components))
+        return (bytes([ord(self.typecode)]) + bytes(self._components))
 
     def __eq__(self, other):
         return tuple(self) == tuple(other)
@@ -38,10 +38,12 @@ class Vector:
         return bool(abs(self))
 
     @classmethod
-    def frombytes(clas, octets):
+    def frombytes(cls, octets):
         typecode = chr(octets[0])
         memv = memoryview(octets[1:]).cast(typecode)
         return cls(memv)
 
 v = Vector(range(10))
 print(repr(v))
+print(bytes(v))
+print(Vector.frombytes(bytes(v)))
