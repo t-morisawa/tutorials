@@ -1,4 +1,3 @@
-
 # AngularJS
 
  - AngularとAngularJsがある
@@ -6,9 +5,21 @@
  - https://angular.io/
  - directiveを使う点は、Vueと似ている
  
-## サンプル
-
+## Your First App
+ - https://angular.io/start
  - EventEmitterが出てきた
  - 開発環境なしで開発むりでは
  - ローカルで開発しようとしたら300MBくらいのサンプルをダウンロードすることに
  - エコシステムに慣れない
+ - コンパイル必須
+ 
+## アーキテクチャ
+ - https://angular.io/guide/architecture
+ - TypeScript
+ - モジュール(NgModule)
+ - コンポーネント（UIを持つ） <-> サービス（UIを持たない）
+   - コンポーネントはサービスにユースケースを移譲する（通信、バリデーション、ログ出力）
+   - サービスは複数のコンポーネントで再利用される
+ - サービスもクラスとして定義するのはなんかJavaっぽい
+ - サービスも状態を持つようなので、DDDのサービスとは違うものっぽい
+ 
