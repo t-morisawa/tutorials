@@ -64,3 +64,8 @@ ng serve --open
 ## HTTP Request
  - https://angular.jp/guide/http
  - RxJSにも対応しているのでリトライ制御とかできる
+
+### HTTPのサンプルを落として使ってみる
+ - `npm install` すればいいの？ なんか `ng` 系のラッパコマンドとかあるのか
+ - download example は結局エラーが出て動かなかったので使わない（こういうのが嫌なんだよなあ）
+ - live exmapleで様子見
