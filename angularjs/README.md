@@ -37,3 +37,21 @@
  - 無料版ではedit内容をプライベートにできず、GitHubのプライベートリポジトリに紐づけることもできない
  - なので、VSCodeでプラグインを入れて開発するか、Cloud9を調べてみる
  - あんまりな感じだったら1ヶ月だけStackBlitzの有料版を契約してみる
+
+
+### Cloud9
+ - なんかパッケージインストールが必要そう
+    - アプリのリアルタイム表示もできないかな？
+
+## デプロイまで
+### StackBlitzの場合
+もし任意の場所でホスティングしたい場合は以下のようなことをする必要あり
+
+```
+npm install -g @angular/cli
+ng new my-project-name
+ng build --prod
+```
+
+### VSCode
+https://qiita.com/henjiganai/items/930a299afa53a968d310
