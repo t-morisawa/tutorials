@@ -22,4 +22,13 @@
    - サービスは複数のコンポーネントで再利用される
  - サービスもクラスとして定義するのはなんかJavaっぽい
  - サービスも状態を持つようなので、DDDのサービスとは違うものっぽい
+ - ライブラリについてはHTTPクライアントやCSSアニメーションのラッパなどを自前で持ってるらしい
  
+## 結局なんの開発環境で開発すればいいのか？
+ - CodeSandbox
+    - https://codesandbox.io/
+    - ReactやVueの開発もできる
+ - StackBlitz 
+    - https://stackblitz.com/angular/mjrapnbjydj
+    - Angularのサンプルで使われているオンラインエディタ
+    - GitHub連携もできるらしい？
