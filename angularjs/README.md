@@ -32,3 +32,8 @@
     - https://stackblitz.com/angular/mjrapnbjydj
     - Angularのサンプルで使われているオンラインエディタ
     - GitHub連携もできるらしい？
+
+## とりあえずStackBlitzでアプリを作り始める
+ - 無料版ではedit内容をプライベートにできず、GitHubのプライベートリポジトリに紐づけることもできない
+ - なので、VSCodeでプラグインを入れて開発するか、Cloud9を調べてみる
+ - あんまりな感じだったら1ヶ月だけStackBlitzの有料版を契約してみる
