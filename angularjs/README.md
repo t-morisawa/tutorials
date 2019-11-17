@@ -55,3 +55,12 @@ ng build --prod
 
 ### VSCode
 https://qiita.com/henjiganai/items/930a299afa53a968d310
+
+```
+ng new my-project-name
+ng serve --open
+```
+
+## HTTP Request
+ - https://angular.jp/guide/http
+ - RxJSにも対応しているのでリトライ制御とかできる
