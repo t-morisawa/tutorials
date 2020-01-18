@@ -1,0 +1,13 @@
+<script src="https://unpkg.com/marked@0.3.6"></script>
+<script src="https://unpkg.com/lodash@4.16.0"></script>
+<link href="./index.css" rel="stylesheet"></link>
+<div id="editor">
+    <!--
+        v-bind:value == :value
+        v-on:input == @value
+    -->
+    <textarea v-bind:value="input" v-on:input="update"></textarea>
+    <div v-html="compiledMarkdown"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./index.js"></script>
