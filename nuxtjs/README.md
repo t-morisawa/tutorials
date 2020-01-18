@@ -31,3 +31,17 @@ contextオブジェクトにアクセスできる
 
 https://ja.nuxtjs.org/api/context
 
+### loadingコンポーネント
+
+Nuxtはデフォルトでローディングコンポーネントを持っている。
+
+画面上部のプログレスバー。
+
+https://ja.nuxtjs.org/guide/configuration/
+
+これをカスタマイズする場合は、 `nuxt.config.js` で設定を変更したり、カスタムコンポーネントを読み込ませる
+
+https://ja.nuxtjs.org/api/configuration-loading
+
+ローディング画面は、asyncDataのメソッドの中で強制的に待ち状態を作る（setTimeoutなどで）ことで実現可能
+
