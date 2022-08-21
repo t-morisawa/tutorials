@@ -1,7 +1,7 @@
 var HID = require('node-hid');
 
-var device = new HID.HID(2131,256); // HHKB. 管理者権限で実行
-// var device = new HID.HID(1149,8257); // track ball
+var device = new HID.HID(2131,256); // HHKB Professional. 管理者権限で実行
+// var device = new HID.HID(1149,8257); // Kensington Slimblade Trackball
 
 setTimeout(function() {
   console.log('5sec has passed. hid device is closed.')
