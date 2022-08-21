@@ -4,7 +4,7 @@ brew install lsusb
 pip install nfcpy
 ```
 
-メモ: Macだと動かなかった.
+メモ: Macだと動かなかった. 使っている機器が認識できていないかもしれない.
 
 ```
 % python main.py
