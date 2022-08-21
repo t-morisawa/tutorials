@@ -1,4 +1,18 @@
 var HID = require('node-hid');
-var devices = HID.devices();
 
-console.log(devices);
+var device = new HID.HID(2131,256); // HHKB. 管理者権限で実行
+// var device = new HID.HID(1149,8257); // track ball
+
+setTimeout(function() {
+  console.log('5sec has passed. hid device is closed.')
+  device.close();
+}, 5000);
+
+
+device.on("data", function(data) {
+  console.log(data);
+});
+
+device.on("error", function(data) {
+  console.log(data);
+});
